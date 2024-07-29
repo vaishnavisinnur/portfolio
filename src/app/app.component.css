@@ -1,0 +1,1033 @@
+                                                                      /* Style for Gray container */
+/* Base styles for nav */
+.nav {
+    background-color: rgb(27, 27, 27); /* Dark background */
+    color: #fbf7f7;
+    width: 100%; /* Full width of viewport */
+    max-width: 100vw; /* Ensure it does not exceed viewport width */
+    height: 60px; /* Set a fixed height for the navbar */
+    border-radius: 0; /* No border-radius by default */
+    display: flex; /* Flexbox layout */
+    flex-direction: row; /* Always horizontal layout */
+    justify-content: space-around; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 0 1rem; /* Padding on left and right */
+    position: fixed; /* Fixed position for the navbar */
+    top: 0; /* Align to the top of the page */
+    z-index: 1000; /* Ensure it stays on top */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow: hidden; /* Hide overflow content */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+/* Style for individual nav items */
+.nav .box {
+    color: #fbf7f7; /* White color for text */
+    font-size: 1.5rem; /* Adjust size for responsiveness */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    margin: 0.2rem; /* Space between items */
+}
+
+/* Ensure links inside .box retain color */
+.nav .box a {
+    color: inherit; /* Inherit color from parent .box */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Ensure links fill the container */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    text-align: center; /* Center text */
+    line-height: 60px; /* Vertically center text */
+}
+
+/* Hover effect for nav items */
+.nav .box:hover {
+    color: #dfe0e6; /* Light color on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+/* Hover effect for links */
+.nav .box a:hover {
+    color: #dfe0e6; /* Light color on hover */
+}
+
+                                                                        /* will be implementiong further */
+                                                                         /* nav-collapse section */
+.nav-collapse {
+    margin-top: 0.25px; /* Space below the nav bar */
+    padding: top 70px;;
+    display: flex; /* Flexbox layout */
+    flex-direction: row; /* Always horizontal layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 1rem; /* Padding inside navbar */
+    background-color: #ebe6e6; /* Dark background */
+    width: 100%; /* Full width of viewport */
+    max-width: 100vw; /* Ensure it does not exceed viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow-x: auto; /* Allow horizontal scrolling if content exceeds */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+
+/* Base styles for navigation boxes */
+.nav-collapse .box {
+    color: #fff; /* White color */
+    font-size: 1rem; /* Adjust size for responsiveness */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    margin: 0 0.5rem; /* Space between items */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .nav {
+        padding: 1rem; /* Adjust padding if needed */
+    }
+
+    .nav .box {
+        font-size: 1.2rem; /* Adjust size for smaller screens */
+    }
+
+    .nav-collapse {
+        padding: 1rem; /* Adjust padding if needed */
+    }
+
+    .nav-collapse .box {
+        font-size: 1rem; /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for extra small screens */
+    .nav .box {
+        font-size: 1rem; /* Smaller icons for extra small screens */
+    }
+
+    .nav-collapse .box {
+        font-size: 0.9rem; /* Smaller text for extra small screens */
+    }
+}
+
+
+
+                                                                  /* nav bar ended */
+
+
+
+
+
+
+
+                                                                /* this is container 1 (gray container ) */
+
+.container1 {
+    display: flex;
+    flex-direction: row; /* Default layout: image on the left, text on the right */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+
+    margin-top: 0; /* Remove top margin */
+    padding: 0 50px; /* Space on the left and right */
+    margin-bottom: 200px;
+    background-color: rgb(228, 232, 236);
+   
+    background-position: center top;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    min-height: 100vh; /* Ensure full viewport height */
+    box-sizing: border-box; 
+}
+
+/* alligning text responsively*/
+.content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the left */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Align text to the left */
+    padding: 10px; /* Top padding for spacing */
+    width: 100%; /* Full width of its parent */
+    box-sizing: border-box; /* Include padding in width calculation */
+    padding-right: 250px;
+}
+
+
+/* Default styles */
+h1, h2, p {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to the entire body */
+    margin: 0; /* Remove default margin */
+    margin-bottom: 20px; /* Add space between elements */
+    width: 500px; /* Ensure full width within content */
+    max-width: 100%; /* Prevent overflow */
+    padding: 0 10px; /* Horizontal padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+
+}
+
+
+/* Additional styles for headings */
+.greet{
+    font-size: 4rem;
+}
+h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    padding: 10px;
+   
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    padding: 10px;
+  }
+  
+  p {
+    font-size: 1rem; /* Adjust size as needed */
+    padding: 8px;
+  }
+
+ 
+/* Keyframes for greet animation */
+@keyframes greetAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for heading animation */
+@keyframes headingAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the greet element */
+.greet {
+    animation: greetAnimation 1s ease-out;
+    animation-fill-mode: forwards; /* Ensure the animation state persists */
+}
+
+/* Apply animation to heading with a delay */
+h1:not(.greet) {
+    opacity: 0; /* Start hidden */
+    animation: headingAnimation 1s ease-out;
+    animation-delay: 1s; /* Delay equal to the duration of greetAnimation */
+    animation-fill-mode: forwards; /* Ensure the animation state persists */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .content {
+        padding: 0 2%; /* Reduce horizontal padding for smaller screens */
+    }
+}
+
+/* Media Query for Medium Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        padding: 0 4%; /* Adjust padding for medium screens */
+    }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 1025px) {
+    .content {
+        padding: 0 5%; /* Increase padding for larger screens */
+    }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .container1 {
+        padding: 0 10%; /* Increase padding for larger screens */
+    }
+}
+
+/* Media Query for Even Larger Screens */
+@media (min-width: 1024px) {
+    .container1 {
+        padding: 0 15%; /* Further increase padding for even larger screens */
+    }
+}
+
+.icon-container {
+    position: absolute; /* Absolute positioning within the .container1 */
+    bottom: 300px; /* Adjust this value to move the icons further up or down from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the container horizontally */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width of the container */
+  }
+
+   
+/* Icon Links */
+.icon-container .icon-link {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.container1 i {
+    font-size: 2rem; /* Adjust icon size as needed */
+    margin: 0 15px; /* Space between icons */
+    color: #171616; /* Icon color */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+ 
+
+
+.icon-container i:hover {
+    color: #3653e7; /* Change color on hover */
+}
+  
+  /* To ensure that the icons are at the bottom of the container */
+  .container1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0;
+    right: 0;
+  
+  }
+
+
+                                                                       /* .container1 ends here  */
+
+
+
+
+
+
+                                                                    /* this is all about the white container   */
+.container{
+
+    background-color: #fbf7f7;
+    padding-bottom:3.5px;
+    margin-bottom:5px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: flex-end; /* Align child elements to the bottom */
+    position: relative; /* Positioning context for heading alignment */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.bottom-heading {
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add some padding if needed */
+    text-align: center; /* Center the text */
+    position: absolute; /* Position it absolutely within the container */
+    bottom: 80px; /* Align to the bottom of the container */
+    width: 100%; /* Make the heading span the full width of the container */
+    font-family: 'Roboto', sans-serif; /* Custom font */
+    font-size: 3rem; /* Larger font size for prominence */
+    font-weight: bold; /* Bold font weight for emphasis */
+    color: #0c0d0d; /* Font color */
+  }
+                                                                    /*   this is container2 which cotnains about me details */
+
+.container2{
+     margin-top: 150px;
+     background-color: rgb(228, 232, 236);
+     padding: 10vh 5vw 80vh 5vw;
+     padding-top: 5vh; 
+     border-end-end-radius:30%;
+     display: flex; /* Use Flexbox for layout */
+     flex-direction: row; /* Arrange items horizontally */
+     justify-content: space-between; /* Space between content and image */
+     align-items: center; /* Vertically center items */
+     padding: 20px; /* Add padding to the container */
+     gap: 20px; /* Space between content and image */
+ }
+                                    /* profile image allignment*/
+.profile-img {
+    width: 250px; /* Set desired size */
+    height: 250px; /* Set desired size */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits the circle */
+    margin-right: 300px; /* Space between the image and text */
+    margin-top: 100px;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+   }
+    
+ .intro1,.intro2,.intro3,.intro4 {
+    font-weight: normal; /* Set font weight to normal */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+  /* Adjust the content */
+  .content {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Space between content and image */
+  }
+   .intro4{
+    padding-top: 30px;
+   }
+
+
+
+  
+  /* Media Query for Responsive Layout */
+  @media (max-width: 768px) {
+    .container2 {
+      flex-direction: column; /* Stack content and image vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .content1 {
+      margin-right: 0; /* Remove margin when stacked */
+      text-align: center; /* Center text for smaller screens */
+    }
+    .profile-img{
+        align-items: center;
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+  }
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .container2 {
+        flex-direction: row; /* Stack content horizontally on larger screens */
+        justify-content: space-between; /* Space out the content and profile image */
+        align-items: flex-start; /* Align items to the top */
+        padding: 20px 50px; /* Add padding on larger screens */
+    }
+
+    .content1 {
+        flex-direction: column; /* Stack text headings vertically */
+        align-items: flex-start; /* Align text headings to the left */
+        margin-bottom: 0; /* Remove bottom margin */
+        margin-right: 20px; /* Add some space between text and image */
+        margin-left: 200px;
+    }
+}
+
+
+
+                                                                              /* animations for about me contnent */
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+        color: rgba(0, 0, 0, 0.2); /* Start with a light color */
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        color: rgba(0, 0, 0, 1); /* End with dark color */
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Apply animation to .content1 */
+.content1 {
+    opacity: 1; /* Ensure the element is fully visible */
+    animation: slideIn 4s ease-out; /* Apply animation with color transition */
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+    .content1 {
+        animation: fadeIn 4s ease-out; /* Fallback for smaller screens */
+    }
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .content1 {
+        animation: slideIn 4s ease-out; /* Apply animation for larger screens */
+    }
+}
+
+
+
+
+
+                                                                         /* Project1 (Contianer 2)*/
+
+/* Base styles for projects container */
+.projects {
+    background-color: white; /* White background color */
+    padding: 20px; /* Padding around the content */
+    margin: 20px 0;
+    margin-top: 20px; /* Space above the container */
+    min-height: 100vh; /* Ensure full viewport height if needed */
+    border-radius: 8px; /* Rounded corners */
+    height: 100px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative; /* Positioning context for headline */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .container2 {
+      flex-direction: column; /* Stack content and image vertically on smaller screens */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .profile-img {
+      margin-bottom: 20px; /* Space between image and content on smaller screens */
+    }
+  }
+  
+
+
+/* Headline styles */
+.headline {
+    margin: 0; /* Remove default margin */
+    padding-top: 50px;
+    padding-bottom: 10px; /* Space below the headline */
+    text-align: center; /* Center the text */
+    font-family: 'Roboto', sans-serif; /* Custom font */
+    font-size: 3rem; /* Larger font size for prominence */
+    font-weight: bold; /* Bold font weight for emphasis */
+    color: #0c0d0d; /* Font color */
+}
+
+/* Container for images */
+.image-container {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center images vertically */
+    gap: 20px; /* Space between images */
+    margin-top: 20px; /* Space above images */
+    justify-content: center; /* Center images horizontally within the container */
+    padding-left: 400px;
+    padding-top:100px;
+}
+
+/* Styles for images */
+.projects img {
+    width: 200px; /* Set a smaller width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    object-fit: cover; /* Ensure the image covers the area */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    
+        width: 200px; /* Adjust width */
+        margin: 10px; /* Adjust margin if necessary */
+    
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack images vertically on small screens */
+        align-items: center; /* Center images horizontally */
+        margin-top: 5px; /* Adjust top margin */
+        margin-right:400px ;
+    }
+
+    .projects img {
+        width: 200px; /* Larger width for smaller screens */
+    }
+
+    .projects img:not(:first-child) {
+        display: none; /* Hide all images except the first one */
+    }
+}
+
+@media (min-width: 769px) {
+    .image-container {
+        flex-direction: row; /* Place images side by side on larger screens */
+        align-items: center; /* Center images vertically */
+        margin-top: 20px; /* Space above images */
+        justify-content: flex-start; /* Align images to the start */
+        width: 100%; /* Ensure container spans full width */
+    }
+
+    .projects img {
+        width: 130px; /* Adjust width for larger screens */
+    }
+}
+
+
+                                                                          /* adding shadow for the images */
+
+/* Styles for images */
+.projects img {
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    object-fit: cover; /* Ensure the image covers the area */
+    box-shadow: 0 8px 16px rgba(0, 0, 255, 0.5); /* Blue shadow */
+}
+
+
+
+.blue {
+    color: #0000FF;
+}
+.gray{
+    color:gray;
+}
+.green{
+    color: #139c31;
+}
+.prohead{
+    font-size:36px ;
+}
+.prohead, .inf{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold; /* Applies the bold weight */
+}
+
+.proinfo{
+    position: absolute; /* Absolute positioning to place it relative to the parent */
+    top: 150px; /* Adjust as needed to align vertically with the images */
+    right: 100px; /* Space from the right edge of the parent container */
+    padding: 20px; /* Padding inside proinfo */
+    border-radius: 8px; /* Rounded corners */
+    margin-left: auto; /* Push proinfo to the right side */
+    line-height: 1.6; /* Line height for better readability */
+    width: 600px; /* Set a specific width for proinfo */
+    text-align: left; /* Align text to the left */
+
+}
+
+
+
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .projects {
+        display: flex; /* Flexbox layout for alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 20px; /* Adjust padding if needed */
+        height: auto;
+    }
+
+    .image-container {
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center images horizontally */
+        margin-top: -40px; /* Space above images */
+    }
+
+    .projects img {
+        width: 150px; /* Adjust image size for smaller screens */
+        margin: 10px; /* Adjust margin if needed */
+    }
+
+    .proinfo {
+        position: relative; /* Reset to relative positioning */
+        left: auto;
+        top: auto; /* Reset top positioning */
+        right: auto; /* Reset right positioning */
+        margin: 20px auto; /* Center the proinfo with margin auto */
+        width: 90%; /* Set width to be responsive */
+        text-align: center; /* Center text for better readability on smaller screens */
+        padding: 20px; /* Maintain padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+}
+
+
+
+
+                                                                       /* animations for project1 description  */
+/* Keyframe animation for left to right appearance */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to the .inf paragraph */
+.inf,.gray1,.git1 {
+    animation: slideInRight 4s ease-out; /* Animation for .inf */
+}
+
+/* Hide the h1 initially */
+h1 {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInRight 1.5s ease-out;
+    animation-delay: 1.5s; /* Delay to match the duration of the .inf animation */
+    animation-fill-mode: forwards; /* Ensure the h1 remains visible after the animation */
+}
+
+                                                           /* project1 ends here (container2) */
+
+
+
+
+                                                           
+/* Project2 container styles */
+
+                                                          /* content h1,para,git codes  */
+.project2 h1 {
+    text-align: left; /* Align text to the left */
+    padding-top: 10px;
+    margin-bottom: 40px; /* Increase space below the heading */
+    margin-left: 100px;
+    padding: 20px; /* Maintain padding */
+}
+
+
+.project2 .para{
+    width: 600px;
+    text-align: left;
+    padding-top: 0px;
+    margin-bottom: 10px; /* Space below the paragraph */
+    margin-left: 100px;
+    padding: 10px; /* Maintain padding */
+    word-spacing: 8px; /* Adjust the space between words */
+    line-height: 1.8; /* Adjust line height to create space between lines */
+
+
+}
+
+.project2 .gray {
+    text-align: left; /* Align text to the left */
+    padding-top: 20px;
+    margin-bottom: 20px; /* Space below the paragraph */
+    margin-left: 100px;
+    padding: 20px; /* Maintain padding */
+}
+.git{
+    margin-left: 50px;
+}
+
+.project2 {
+    position: relative; /* Ensure the container has positioning context for absolute positioning */
+    margin-top: 90px; /* Adjust the space around the project2 container */
+    padding: 20px; /* Add padding inside the project2 container */
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: center; /* Center-align content */
+}
+
+/* For larger screens */
+.im-container {
+    position: absolute; /* Absolute positioning within the project2 container */
+    top: 0; /* Align to the top of the project2 container */
+    right: 0; /* Align to the right of the project2 container */
+    margin-top: 150px; /* Adjust space above the images if needed */
+    padding-right: 200px; /* Add right padding */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally within the container */
+    gap: 10px; /* Optional: Adjust space between images */
+}
+
+
+.im1, .im2 {
+    max-width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain aspect ratio */
+    width: 500px; /* Set the desired width */
+    border-radius: 8px; /* Optional rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(35, 101, 223, 0.6); /* Whitish-gray shadow */
+}
+.taskhead,.para{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold; /* Applies the bold weight */
+
+}
+
+
+                                                                        /* aniamtion for project2 description */
+/* Define the keyframes for the left-to-right animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animation to .para */
+  .para {
+    animation: slideInFromLeft 4s ease-out;
+    /* Add any other styling you need here */
+  }
+  
+  /* Apply animation to .gray */
+  .gray,.git {
+    animation: slideInFromLeft 4s ease-out;
+    /* Add any other styling you need here */
+  }
+  
+  /* Add styling for images if needed */
+  .im-container img {
+    display: block; /* Ensures images don't have extra space below */
+    max-width: 100%; /* Makes sure images are responsive */
+  }
+  
+
+/* Responsive Styles for Screens Smaller than 768px */
+@media (max-width: 768px) {
+    .project2 {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 30px;
+        height: auto;
+    }
+
+    .im-container {
+        position: static; /* Remove absolute positioning */
+        margin-top: 20px; /* Adjust margin to space the images from the content */
+        padding-right: 0; /* Remove right padding */
+        text-align: center; /* Center-align image container */
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        gap: 10px; /* Space between images */
+    }
+
+    .im1 {
+        display: block; /* Ensure im1 is displayed */
+        width: 70%; /* Adjust width as needed */
+        margin-left: auto; /* Center-align image horizontally */
+        margin-right: auto; /* Center-align image horizontally */
+    }
+
+    .im2 {
+        display: none !important; /* Force hide im2 on smaller screens */
+    }
+
+    .para, .gray {
+        width: 80%; /* Full width on smaller screens */
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center-align text */
+    }
+}
+
+/* Responsive Styles for Screens Smaller than 480px */
+@media (max-width: 480px) {
+    .project2 {
+        margin-top: 50px; /* Reduce top margin for very small screens */
+    }
+
+    .para, .gray {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
+
+    .im1 {
+        width: 80%; /* Further adjust width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project3 {
+    background-color: white; /* White background color */
+    padding: 20px; /* Padding around the content */
+    margin-top:100px ;
+    min-height: 50vh; /* Ensure full viewport height if needed */
+    border-radius: 8px; /* Rounded corners */
+    height: 400px; /* Set height */
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative; /* Positioning context */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.shakehand{
+    width: 80px;
+    padding-top: 40px;
+}
+.contact{
+    padding-top: 40px;
+    font-size:30px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+.btns {
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center align buttons */
+    margin-top: 20px; /* Space above the button container */
+}
+
+.btns button {
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 26px; /* Font size of the button text */
+    border-radius: 40px; /* Optional rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.btns .Email {
+    
+    background-color: #0a0a0a; /* Background color for 'Email' button */
+    color: white; /* Text color */
+}
+
+.btns .Email:hover {
+    background-color: #101111; /* Darker color on hover */
+}
+
+.btns .linkedin {
+    background-color: #0077b5; /* Background color for 'LinkedIn' button */
+    color: white; /* Text color */
+}
+
+.btns .linkedin:hover {
+    background-color: #005582; /* Darker color on hover */
+}
+
+  
+
+                                                     /* animation button*/
+ .cv {
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 20px 40px; 
+    border: none;
+    outline: none;
+    color: #151313;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+.cv::after{
+    content: " ";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6f6868;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.cv::before{
+    content:"";
+    background: linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+
+    
+     animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing{
+    0%{background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100%{background-position: 0 0;}
+}
+
+.angu{
+color: rgb(167, 165, 165);
+text-align: center;
+margin-top:30px ;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
