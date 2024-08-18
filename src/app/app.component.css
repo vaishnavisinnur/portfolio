@@ -822,22 +822,18 @@ h1 {
 }
 
 .git {
-    margin-left: 50px;
+    margin-left: 100px;
     font-family: 'Oswald', sans-serif;
     font-weight: bold; /* Apply bold weight */
 }
 
 .project2 {
-    position: relative; /* Ensure the container has positioning context */
-    margin-bottom: auto;
-    margin-top: 0px; /* Adjust the space around the project2 container */
-    padding: 20px; /* Add padding inside the project2 container */
-    border-radius: 8px; /* Optional rounded corners */
-    text-align: center; /* Center-align content */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
 
 /* Ensure the text-container takes full width and is above the images */
 .text-container {
