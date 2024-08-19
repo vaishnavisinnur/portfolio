@@ -1,5 +1,44 @@
+                                                                      
+/* Apply box-sizing to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Ensures the container doesn't overflow */
+        padding: 0 10px; /* Adjust padding to fit within the viewport */
+    }
+
+    /* Adjust other elements as necessary */
+    .element-class {
+        width: 100%; /* Make sure elements inside the container don't overflow */
+        margin: 0 auto; /* Center the element */
+    }
+}
+                                                     
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
                                                                       /* Style for Gray container */
-/* Base styles for nav */
+
+
+
+
+
+                                                                      /* Base styles for nav */
 .nav {
     background-color: rgb(27, 27, 27); /* Dark background */
     color: #fbf7f7;
