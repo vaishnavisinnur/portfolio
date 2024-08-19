@@ -785,9 +785,18 @@ h1 {
 
                                                           /* content h1,para,git codes  */
 /* Project2 container styles */
-
+.project2 {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
 
 /* content h1, para, git codes */
+
+
 .project2 h1 {
     text-align: left; /* Align text to the left */
     padding-top: 10px;
@@ -827,13 +836,7 @@ h1 {
     font-weight: bold; /* Apply bold weight */
 }
 
-.project2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-  }
+
 
 /* Ensure the text-container takes full width and is above the images */
 .text-container {
@@ -948,7 +951,7 @@ h1 {
         justify-content: flex-start; /* Align images to the start */
         margin-top: 500px; /* Adjust top margin */
         align-items: center;
-        margin-right:-190px;
+        margin-right:-250px;
         width: 200px;
         height: 100px;
     }
